@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Components\app.js" />
+    <Content Include="Components\controllers\AboutController.js" />
+    <Content Include="Components\controllers\HomeController.js" />
+    <Content Include="Components\controllers\LoginController.js" />
+    <Content Include="Components\css\app.css" />
+    <Content Include="Components\views\aboutView.html" />
+    <Content Include="Components\views\homeView.html" />
+    <Content Include="Components\views\loginView.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="2.5.357" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
@@ -14,7 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\assets\js\" />
+    <Folder Include="Components\Services\" />
+    <Folder Include="wwwroot\views\" />
   </ItemGroup>
 
   <ItemGroup>

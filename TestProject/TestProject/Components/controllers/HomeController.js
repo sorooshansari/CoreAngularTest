@@ -11,7 +11,7 @@ angular.module('mostPopularListingsApp.home', ['ngRoute'])
 .config(['$routeProvider',function($routeprovider){
 	$routeprovider.when('/', {
 		controller: 'HomeController',
-        templateUrl: 'assets/components/views/homeView.html'
+        templateUrl: 'views/homeView.html'
 	});
 }])
 

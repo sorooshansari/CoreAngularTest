@@ -2,19 +2,43 @@
 // More info at https://go.microsoft.com/fwlink/?LinkId=808241
 [
   {
-    "outputFileName": "wwwroot/css/site.min.css",
+    "outputFileName": "wwwroot/views/aboutView.html",
     // An array of relative input file paths. Globbing patterns supported
     "inputFiles": [
-      "wwwroot/assets/css/app.css"
+      "Components/views/aboutView.html"
     ]
   },
   {
-    "outputFileName": "wwwroot/js/site.min.js",
+    "outputFileName": "wwwroot/views/homeView.html",
+    // An array of relative input file paths. Globbing patterns supported
     "inputFiles": [
-      "wwwroot/assets/components/app.js",
-      "wwwroot/assets/components/controllers/AboutController.js",
-      "wwwroot/assets/components/controllers/HomeController.js",
-      "wwwroot/assets/components/controllers/LoginController.js"
+      "Components/views/homeView.html"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/views/loginView.html",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "Components/views/loginView.html"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "Components/css/app.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/app.min.js",
+    "inputFiles": [
+      "Components/controllers/AboutController.js",
+      "Components/controllers/HomeController.js",
+      "Components/controllers/LoginController.js",
+      "Components/app.js"
     ],
     // Optionally specify minification options
     "minify": {
@@ -22,6 +46,6 @@
       "renameLocals": true
     },
     // Optionally generate .map file
-    "sourceMap": false
+    "sourceMap": true
   }
 ]
